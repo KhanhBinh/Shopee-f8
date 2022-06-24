@@ -18,6 +18,7 @@
     margin: 0 8px;
     position: relative;
     min-height: 26px;
+    display: inline-block;
 }
 
 .header__navbar-item,
@@ -29,7 +30,6 @@
     font-weight: 300;
 }
 
-.header__navbar-item,
 .header__navbar-item-link,
 .header__navbar-icon-link{
     display: inline-flex;
@@ -83,9 +83,14 @@
 }
 
 .header__qr-img{
-
+    width: 100%;
+    max-width: 130px;
 }
 
 .header__qr-apps{
+
+}
+
+.header__qr-download-img{
 
 }
