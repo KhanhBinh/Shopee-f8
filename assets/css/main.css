@@ -71,3 +71,21 @@
     cursor: text;
     color: var(--white-color);
 }
+
+/* Header QR code */
+
+.header__qr{
+    background-color: var(--white-color);
+    width: 130px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.header__qr-img{
+
+}
+
+.header__qr-apps{
+
+}
