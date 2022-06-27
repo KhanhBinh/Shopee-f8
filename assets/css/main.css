@@ -146,6 +146,7 @@
     height: 40px;
     background-color: var(--white-color);
     width: 500px;
+    cursor:default;
 }
 
 .header__notify-header h3{
@@ -195,6 +196,7 @@
     font-size: 1.4rem;
     color: var(--black-color);
     font-weight: 400;
+    line-height: 1.6rem;
 }
 
 .header__notify-description{
@@ -206,13 +208,20 @@
 
 .header__notify-footer{
     text-align: center;
-    height: 30px;
+    display: flex;
+    height: 40px;
+}
+
+.header__notify-footer:hover .header__notify-footer-btn{
+    text-decoration: underline;
 }
 
 .header__notify-footer-btn{
     text-decoration: none;
     color: var(--text-color);
     padding: 4px 16px;
-    line-height: 30px;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
