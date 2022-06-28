@@ -140,13 +140,27 @@
     background-color: var(--white-color);
     right: 0;
     border: 1px solid #D3D3D3;
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotifyGrowth ease-in .25s;
+    display: none;
+}
+
+@keyframes headerNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    t0{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .header__notify-header{
     height: 40px;
     background-color: var(--white-color);
-    width: 500px;
-    cursor:default;
+    width: 450px;
 }
 
 .header__notify-header h3{
@@ -155,6 +169,7 @@
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 40px;
+    cursor: text;
 }
 
 .header__notify-list{
@@ -164,6 +179,10 @@
 
 .header__notify-item{
     display: flex;
+}
+
+.header__navbar-item--has-notify:hover .header__notify{
+    display: block;
 }
 
 .header__notify-item:hover{
