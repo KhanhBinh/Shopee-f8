@@ -142,7 +142,19 @@
     border: 1px solid #D3D3D3;
     transform-origin: calc(100% - 20px) top;
     animation: headerNotifyGrowth ease-in .25s;
+    will-change: opacity, transform;
+    width: 450px;
     display: none;
+}
+
+.header__notify::before{
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -29px;
+    left: calc(100% - 50px);
+    cursor: default;
 }
 
 @keyframes headerNotifyGrowth{
@@ -160,7 +172,6 @@
 .header__notify-header{
     height: 40px;
     background-color: var(--white-color);
-    width: 450px;
 }
 
 .header__notify-header h3{
