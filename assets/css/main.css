@@ -255,3 +255,72 @@
     font-weight: 400;
 }
 
+/* Authen Form */
+
+.auth-form{
+    width: 500px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 8px;
+    margin-top: 5px;
+}
+
+.auth-form__container{
+    padding: 0 32px;
+}
+
+.auth-form__heading{
+    margin: 30px 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.auth-form__heading-switch{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.auth-form__input{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.auth-form__input:focus{
+    border-color: #888;
+}
+
+.auth-form__aside{
+    margin-top: 16px;
+}
+
+.auth-form__policy-text{
+    font-size: 1.3rem;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__text-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.auth-form__controls{
+    margin-top: 80px;
+}
