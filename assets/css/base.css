@@ -47,6 +47,7 @@ html{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    animation: fadeIn linear .1s;
 }
 
 .modal__body{
@@ -54,6 +55,9 @@ html{
     margin: auto;
     z-index: 1;
     border-radius: 5px;
+    animation: growth linear .1s;
+    --growth-from: 0.7;
+    --growth-to: 1;
 }
 
 /* Animation */
@@ -67,6 +71,14 @@ html{
     }
 }   
 
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{ 
+        transform: scale(var(--growth-to));
+    }
+}
 /* Button */
 
 .btn{
@@ -89,6 +101,10 @@ html{
     padding: 0 8px;
 }
 
+.btn.btn--normal{
+    line-height: 1.6rem;
+}
+
 .btn.btn--normal:hover{
     background-color: rgba(0, 0, 0, 0.05);
 }
@@ -98,6 +114,7 @@ html{
     color: var(--white-color);
     outline: none;
     cursor: pointer;
+    line-height: 1.6rem;
 }
 
 .btn.btn--disabled{
