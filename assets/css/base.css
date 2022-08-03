@@ -130,6 +130,6 @@ html{
 .blank{
     height: 10px;
     width: 100px;
+    color: red;
     position: absolute;
-    top: 39;
 }
