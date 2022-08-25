@@ -515,7 +515,19 @@
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
     cursor: pointer;
-    display: none;
+}
+
+.header__cart-notice{
+    position: absolute;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding: 1px 6px;
+    border: 2px solid #EE4D2D;
+    border-radius: 10px;
+    right: -5px;
+    top: -2px;
 }
 
 .header__cart-list--no-cart .header__cart-no-cart-img,
