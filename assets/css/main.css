@@ -15,10 +15,89 @@
 }
 
 .header__navbar-item{
-    margin: 0 8px;
+    margin: 3px 8px 0 8px;
     position: relative;
     min-height: 26px;
     display: inline-block;
+}
+
+.header__navbar-user{
+    display: flex;
+    justify-items: center;
+    position: relative;
+}
+
+.header__navbar-user-icon{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-bottom: -5px;
+}
+
+.header__navbar-user-name{
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin-left: 3px;
+}
+
+.header__navbar-user:hover .header__navbar-user-name{
+    opacity: 0.8;
+}
+
+.header__navbar-user-menu{
+    position: absolute;
+    padding: 0;
+    right: 0;
+    top: calc(100% + 5px);
+    background-color: var(--white-color);
+    z-index: 1;
+    border-radius: 2px;
+    width: 160px;
+    list-style: none;
+    display: none;
+    box-shadow: 0 2px 2px #e0e0e0;
+}
+
+.header__navbar-user-menu::before{
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -29px;
+    left: calc(100% - 50px);
+    cursor: default;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu{
+    display: block;
+}
+
+.header__navbar-user-menu-item{
+    
+}
+
+.header__navbar-user-menu-item a:hover{
+    background-color: #f0efef;
+}
+
+.header__navbar-user-menu-item a:first-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.header__navbar-user-menu-item a:last-child{
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.header__navbar-user-menu-item a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 10px 16px;
+    display: block;
+    font-weight: 400;
 }
 
 .header__navbar-item,
@@ -43,6 +122,7 @@
     font-weight: 300;
     position: absolute;
     top: 6px;
+    margin-top: 3px;
 }
 
 .header__navbar-item-link,
@@ -719,6 +799,15 @@
 
 .header__search-option-item--active i{
     display: inline-block;
+}
+
+.blank2{
+    top: calc(100% - 5px);
+    right: calc(100% - 55px);
+}
+
+.blank2:hover .header__navbar-user-menu{
+    display: block;
 }
 
 .blank:hover .header__search-option{
