@@ -152,12 +152,30 @@ html{
 
 /* Selection */
 .select-input{
+    position: relative;
     padding: 0 12px;
     height: 34px;
     border-radius: 2px;
     background-color: var(--white-color);
-    min-width: 130px;
+    min-width: 180px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: VAR(--white-color);
+    list-style: none;
+    padding: 8px 16px;
+}
+
+.select-input__link{
+    font-size: 1.4rem;
+    text-decoration: none;
+
 }
