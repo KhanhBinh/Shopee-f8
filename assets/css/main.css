@@ -946,6 +946,13 @@
 .home-filter__page{
     display: flex;
     align-items: center;
+    margin-left: auto;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.home-filter__page-num{
+    margin-right: 22px;
 }
 
 .home-filter__label{
