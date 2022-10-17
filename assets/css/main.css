@@ -1208,6 +1208,11 @@ i.home-product-item__like-icon-fill{
     margin-left: 6px;
 }
 
+.home-product__patrination{
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
 .item-wrapper{
     margin-bottom: 10px;
 }
